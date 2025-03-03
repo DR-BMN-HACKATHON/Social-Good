@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enroll the Child</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="back">
+        <a href="#home">Back</a>
+    </div>
+        
+    <div class="container">
+        <h2>Enroll a Child</h2>
+        <p>Provide the necessary details to help a child get support.</p>
+        <form id="enrollForm">
+            <label for="childName">Child's Full Name</label>
+            <input type="text" id="childName" name="childName" required>
+
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="guardianName">Guardian's Name</label>
+            <input type="text" id="guardianName" name="guardianName" required>
+
+            <label for="contact">Guardian's Contact Number</label>
+            <input type="tel" id="contact" name="contact" required pattern="[0-9]{10}" placeholder="Enter 10-digit number">
+
+            <label for="support">Type of Support Needed</label>
+            <select id="support" name="support" required>
+                <option value="">Select</option>
+                <option value="Education">Education</option>
+                <option value="Medical Help">Medical Help</option>
+                <option value="Shelter">Shelter</option>
+                <option value="Food">Food</option>
+            </select>
+
+            <label for="photo">Upload Child's Photo (Optional)</label>
+            <input type="file" id="photo" accept="image/*">
+
+            <button type="submit">Submit</button>
+        </form>
+        <p id="successMessage" class="hidden">✅ Enrollment successful! We will contact you soon.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
