@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Now - Support Neurodiverse Communities</title>
+    <link rel="stylesheet" href="donation.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Support Neurodiverse Communities 💜</h1>
+        <p>Your donation helps provide education, support, and resources.</p>
+
+        <div class="donation-box">
+            <h2>Make a Donation</h2>
+            <form id="donationForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <input type="number" id="amount" placeholder="Donation Amount ($)" required>
+                
+                <select id="paymentMethod" required>
+                    <option value="" disabled selected>Select Payment Method</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="stripe">Stripe</option>
+                    <option value="gpay">Google Pay</option>
+                </select>
+
+                <textarea id="message" placeholder="Leave a message (optional)"></textarea>
+                <button type="submit">Donate Now</button>
+            </form>
+        </div>
+
+        <div class="donation-counter">
+            <h3>Total Donations: <span id="totalAmount">$1000</span></h3>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar with Logo</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #f6f5f2;
+        padding: 15px 30px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      .logo {
+        font-size: 1.5em;
+        font-weight: bold;
+        color: #1e40af;
+      }
+      .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 15px;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+      }
+      .nav-links li {
+        display: inline;
+        align-items: center;
+        padding: 20px;
+        justify-content: center;
+      }
+      .nav-links a {
+        text-decoration: none;
+        color: #4b5563;
+        font-weight: 700;
+        font-size: 30px;
+        transition: color 0.3s ease;
+      }
+      .nav-links a:hover {
+        color: #1e40af;
+        transition: 4s;
+      }
+      .video-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+      }
+      video {
+        width: 80%;
+        max-width: 1000px;
+        border-radius: 10px;
+      }
+      a:hover {
+        color: black;
+      }
+    </style>
+  </head>
+  <body style="background-color: beige">
+    <nav class="navbar">
+      <div class="logo"><img src="logo.png" width="100px" />Neurodiverse</div>
+      <ul class="nav-links">
+        <li>
+          <a
+            href="C:\Users\Janhvi\OneDrive\Desktop\social project\bmn haca\index.html"
+            >Home</a
+          >
+        </li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="C:\Users\Janhvi\OneDrive\Desktop\social project\bmn haca\enroll.html">Enrollment</a></li>
+        <li>
+          <a
+            href="C:\Users\Janhvi\OneDrive\Desktop\social project\bmn haca\volunteer.html"
+            >Volunteer</a
+          >
+        </li>
+        <li>
+          <a
+            href="C:\Users\Janhvi\OneDrive\Desktop\social project\bmn haca\community.html"
+            >Community</a
+          >
+        </li>
+        <li><a href="C:\Users\Janhvi\OneDrive\Desktop\social project\bmn haca\aboutus.html">About Us</a></li>
+        <li><a href="C:\Users\Janhvi\OneDrive\Desktop\social project\bmn haca\donations.html">Donation</a></li>
+      </ul>
+    </nav>
+    <div class="video-container">
+      <video src="India Autism Center.mp4" width="1000px " controls></video>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,187 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #F6F5F2; /* Soft Cream */
+    color: #4A4E69; /* Muted Purple */
+}
+
+/* Hero Section */
+.hero {
+    background: url('neurodiverse_children-blog.jpg') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin: 0;
+    color: #FAE1DD; /* Light Peach */
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* About Us Section */
+.about-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 50px auto;
+    gap: 30px;
+    padding: 20px;
+}
+
+.box {
+    background: #FAE1DD; /* Light Peach */
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    border: 3px solid #B56576; /* Muted Rose */
+}
+
+.box:hover {
+    background-color: #F2D7D9; /* Blush Pink */
+    transform: translateY(-5px);
+    border-color: #6D597A; /* Deep Mauve */
+}
+
+.box h2 {
+    margin-bottom: 15px;
+    font-size: 1.6rem;
+    color: #6D597A; /* Deep Mauve */
+}
+
+.box p {
+    font-size: 1rem;
+    color: #4A4E69; /* Muted Purple */
+    padding-top: 10px;
+}
+
+/* Links inside Boxes */
+.box a {
+    display: block;
+    text-decoration: none;
+    color: #B56576; /* Muted Rose */
+    font-weight: bold;
+    margin-top: 15px;
+    transition: color 0.3s;
+}
+
+.box a:hover {
+    color: #6D597A; /* Deep Mauve */
+}
+
+/* Hidden Content */
+.hidden {
+    display: none;
+}
+
+.detailed-about {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    border-radius: 10px;
+    max-width: 90%;
+    margin: 40px auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    margin-bottom: 30px;
+}
+
+.detailed-about h2 {
+    color: #2c3e50;
+    font-size: 28px;
+    margin-bottom: 15px;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.detailed-about p {
+    color: #555;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.mission-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.mission-list li {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.mission-list li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #27ae60;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Join Us Section */
+.join-us {
+    text-align: center;
+}
+
+.btn {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #c0392b;
+}
+
+@media (max-width: 768px) {
+    .detailed-about {
+        padding: 30px;
+    }
+
+    .detailed-about h2 {
+        font-size: 24px;
+    }
+
+    .detailed-about p, .mission-list li {
+        font-size: 16px;
+    }
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+        align-items: center;
+    }
+}
