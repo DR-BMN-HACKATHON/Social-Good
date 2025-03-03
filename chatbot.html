@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher-Parent Chat</title>
+    <link rel="stylesheet" href="volunteer.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🗨 Teacher-Parent Communication</h1>
+        <p>Connect and collaborate for better student support.</p>
+
+        <div class="chat-container">
+            <div class="chat-box" id="chatBox">
+                <div class="message teacher-message">Hello, how is my child doing in class?</div>
+                <div class="message parent-message">They are doing great! Improving in math.</div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="messageInput" placeholder="Type your message...">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function sendMessage() {
+            let inputField = document.getElementById("messageInput");
+            let messageText = inputField.value.trim();
+            if (messageText === "") return;
+
+            let messageElement = document.createElement("div");
+            messageElement.classList.add("message", "parent-message");
+            messageElement.textContent = messageText;
+
+            document.getElementById("chatBox").appendChild(messageElement);
+            inputField.value = "";
+        }
+    </script>
+
+</body>
+</html>
